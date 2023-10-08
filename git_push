@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+spawn git push -f origin master
+expect "Username for 'https://github.com':"
+send -- "GitRyanPerrin\r"
+expect "Password for 'https://github.com':"
+send -- "SHA256:IfMP5hFs+JgxHFfOW16TVfCpvO2XqXlZJY7mE38aaQk"
