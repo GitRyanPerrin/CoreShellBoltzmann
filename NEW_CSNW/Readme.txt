@@ -49,8 +49,12 @@ The following files should be anticipated to be correctly working:
       * Loads eigensystems and velocities
    * requirements.txt
    * spin_velocity.pyx 
-      * 
+      * Calculates the RAM usage and splits the calculation if necessary
    * spin_velocity_to_c.py
+      * Compiles spin_velocity_matrix.pyx and spin_velocity.pyx to C
    * thermoelec_cond.py
+      * Calculates the Seebeck coefficient using v = dE/dk
    * velocity.pyx
+      * Calculates the RAM usage and splits the calculation if necessary
    * velocity_to_c.py
+      * Compiles velocity_matrix.pyx and velocity.pyx to C
