@@ -1,3 +1,8 @@
+'''
+This file uses v = dE/dk
+new_ballistic_cond.py uses the hard-coded velocity matrix
+'''
+
 from scipy import integrate
 import numpy as np
 import matplotlib.pyplot as plt
