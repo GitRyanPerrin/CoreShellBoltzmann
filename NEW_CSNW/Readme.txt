@@ -7,10 +7,8 @@ The files which need to be worked on are:
    * new_spin_cond.py
    * spin_cond.py
    * spin_matrix.py
-   * spin_velocity.pyx
    * spin_velocity_matrix.py
    * thermospin.py
-   * velocity.pyx
    * velocity_matrix.py
    
 
@@ -29,6 +27,8 @@ The following files should be anticipated to be correctly working:
    * lattice_to_c.py
    * load_file.py
    * requirements.txt
+   * spin_velocity.pyx
    * spin_velocity_to_c.py
    * thermoelec_cond.py
+   * velocity.pyx
    * velocity_to_c.py
