@@ -1,3 +1,9 @@
+'''
+This portion of the code defines the finite-difference grid for the cross-section
+of the nanowire. The nanotube class was not finished and only includes the circular
+cross-section ¯\_(ツ)_/¯ might get changed back at some point.
+'''
+
 ############################################
 # Standard Library Modules
 import time
