@@ -1,3 +1,11 @@
+'''
+This code defines the Pauli spin matrices on the grid. The Hilbert space is expanded
+from just a 2x2 space because the Pauli matrices in cylindrical coordinates depend
+on the azimuthal position. They are unseparable in this case.
+
+This was intended to be used in the anticommutation relation for the spin-velocity.
+'''
+
 import numpy as np
 from numpy import sqrt, pi, cos, sin, exp
 import matplotlib.pyplot as plt
