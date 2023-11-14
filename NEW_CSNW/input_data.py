@@ -1,3 +1,13 @@
+'''
+This input file contains:
+* All of the physical constants
+* Cross-sectional Geometry
+* Number of Finite-Difference Grid Sites
+* External Field Values
+
+Currently, many of the parameters are changed through commenting/uncommenting..
+'''
+
 from numpy import sin, cos, pi, sqrt
 import numpy as np
 
