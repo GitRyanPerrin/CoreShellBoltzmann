@@ -1,3 +1,7 @@
+'''
+Calculates the Seebeck coefficient using v = dE/dk. Seems to work fine.
+'''
+
 import scipy.linalg as la
 from scipy.interpolate import interp1d
 from scipy import integrate
