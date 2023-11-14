@@ -1,3 +1,8 @@
+'''
+This was an attempt at using v = dE/dk to determine the spin-velocity,
+but since it is not a matrix, it does not seem to properly work.
+'''
+
 from scipy import integrate
 import numpy as np
 import matplotlib.pyplot as plt
