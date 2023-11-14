@@ -1,3 +1,9 @@
+'''
+This code is intended to use the explicit definitions of the charge-velocity and
+spin-velocity matrices. Computing the charge transport differs from the use of
+v = dE/dk, which is clearly problematic.
+'''
+
 from scipy import integrate
 import numpy as np
 import matplotlib.pyplot as plt
