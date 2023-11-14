@@ -1,3 +1,7 @@
+'''
+Attempts to calculate the spin-seebeck coefficient. Does not work.
+'''
+
 import scipy.linalg as la
 from scipy.interpolate import interp1d
 from scipy import integrate
