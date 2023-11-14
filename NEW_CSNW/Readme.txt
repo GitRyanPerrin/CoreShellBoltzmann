@@ -5,4 +5,6 @@ The following files should be anticipated to be correctly working:
  * hamiltonian.pyx, hamiltonian_to_c.py
  * k_structure.pyx, k_structure_to_c.py, calc_k_structure.py
     * This portion may benefit from optimization, possibly through the interpolation of the band-structure
+ * fermi_derivative.py
  * ballistic_cond.py
+ * thermoelec_cond.py
