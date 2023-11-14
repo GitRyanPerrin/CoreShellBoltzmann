@@ -9,3 +9,4 @@ The following files should be anticipated to be correctly working:
  * ballistic_cond.py
  * thermoelec_cond.py
  * load_file.py
+ * combine_npz.py (This code is for when several RAM dumps are used to run a band-structure calculation)
