@@ -1,3 +1,13 @@
+'''
+The Hamiltonian code is in Cython, and is therefore statically typed and is compiled to C.
+This significantly speeds up the code.
+
+The code should follow directly the write-up, but there are additional terms that are not used
+when the magnetic field and/or electric fields are not present. Futhermore, without the
+Dresselhaus coefficient, betaD in input_data, being non-zero the Dresselhaus terms do not
+get added to the matrix.
+'''
+
 ############################################
 # Standard Library Modules
 import time
