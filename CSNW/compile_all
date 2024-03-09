@@ -1,0 +1,42 @@
+#!/bin/bash
+
+RED='\e[0;31m'
+GRN='\e[0;32m'
+CYN='\e[0;36m'
+NC='\e[0m'
+
+if ! command -v gcc &> /dev/null
+then
+    echo -e "${RED}ERROR: gcc is not detected. Install gcc.${NC}"
+    exit 1
+fi
+
+echo -e "${GRN}gcc detected..${NC}"
+
+if ! command -v python3 &> /dev/null
+then
+    echo -e "${RED}ERROR: python3 is not detected. Install python3.${NC}"
+    exit 1
+fi
+
+echo -e "${GRN}python3 detected..${NC}"
+
+echo -e "${CYN}Setting up virtual environment..${NC}"
+python3 -m pip install --user virtualenv
+
+python3 -m venv ./
+
+source ./bin/activate
+
+echo -e "${CYN}Installing python package dependencies..${NC}"
+pip3 install -r requirements.txt
+
+echo -e "${CYN}Compiling Cython modules..${NC}"
+python3 lattice_to_c.py build_ext --inplace
+python3 hamiltonian_to_c.py build_ext --inplace
+python3 k_structure_to_c.py build_ext --inplace
+
+echo -e "${CYN}Exiting python3 virtual environment..${NC}"
+deactivate
+
+echo -e "${CYN}To return to the python3 virtual environment use command: 'source ./bin/activate'.${NC}"
